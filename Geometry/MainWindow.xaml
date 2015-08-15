@@ -1,0 +1,32 @@
+﻿<Window xmlns:dxlc="http://schemas.devexpress.com/winfx/2008/xaml/layoutcontrol"  x:Class="Geometry.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:elements="clr-namespace:Geometry.Elements"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <elements:PathElement Path="{Binding FirstPath}"/>
+        <elements:PathElement Path="{Binding SecondPath}"/>
+
+        <!--<elements:PathElementOld StartX="100" 
+                              StartY="100"
+                              EndX="200" 
+                              EndY="200"
+                              Diameter="150"
+                              PathWidth="100">
+            
+        </elements:PathElementOld>-->
+        <!--<elements:PathElement StartX="200" 
+                              StartY="200"
+                              EndX="50" 
+                              EndY="240"
+                              Diameter="250"
+                              PathWidth="100">
+
+        </elements:PathElement>-->
+
+    </Grid>
+</Window>
